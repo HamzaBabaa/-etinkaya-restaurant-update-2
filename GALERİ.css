@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(images/freshly-cut-meat.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+       
+       
+}
+
+
+
+/*header bölümü*/
+header > nav > a > img{
+   
+  max-width: 150px;
+  height: auto;
+ 
+ 
+ }
+ 
+ .up{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+ }
+ 
+ .up > ul > li > a,
+ .up > a{
+ 
+     color: rgb(255, 123, 0);
+     text-decoration: none;
+     text-transform: uppercase;    
+ }
+
+ 
+ .up > ul > li{
+      list-style: none;
+ }
+ .up > ul > li{float: left;}
+ .up > ul > li > a{
+  float: left;
+  margin-left: 4rem;
+  margin-right: 1rem;
+ }
+a.button {
+  display:block;
+  float:left;
+  margin: 5px;
+  color:rgb(238, 17, 17);
+  text-align:center;
+  font-size:15px;
+  cursor: pointer;
+  text-decoration: none;
+  padding:10px;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-bottom: 3px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 2px 8px rgb(243, 225, 121), /* dış gölge */
+    inset 0 1px rgb(175, 172, 2), /* Top light Line */
+    inset 0 10px rgba(239, 243, 4, 0.733), /* Top Light Shadow */
+    inset 0 10px 20px rgb(226, 230, 1), /* Sides Light Shadow */
+    inset 0 -15px 30px rgba(195, 214, 22, 1); /* Dark Background */
+  -webkit-box-shadow: 0 2px 8px rgba(243, 225, 121),
+    inset 0 1px rgba(175, 172, 2),
+    inset 0 10px rgba(239, 243, 4, 0.733),
+    inset 0 10px 20px rgba(226, 230, 1),
+    inset 0 -15px 30px rgba(226, 230, 1);
+  -moz-box-shadow: 0 2px 8px rgba(243, 225, 121),
+    inset 0 1px rgba(175, 172, 2),
+    inset 0 10px rgba(239, 243, 4, 0.733),
+    inset 0 10px 20px rgba(226, 230, 1),
+    inset 0 -15px 30px rgba(226, 230, 1);
+}
+ 
+ a.button:hover {
+   opacity: 0.7;
+   filter: alpha(opacity=70);
+   -moz-opacity:0.7;
+   -khtml-opacity: 0.7;
+ }
+/*main bölümü*/
+
+main > section > h1{
+  color:rgb(243, 225, 121);
+}
+.gallery {
+  width: 640px;
+  margin: 0 auto;
+  padding: 5px;
+  
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .5s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*footer bölümü*/
+
+footer{
+   
+    width: 100%;
+    flex-direction:column;
+}
+
+
+
+footer > article{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+
+}
+
+
+footer > article > a > img{
+   width: 150px;
+   height: auto;
+}

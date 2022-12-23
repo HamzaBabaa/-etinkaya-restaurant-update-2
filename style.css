@@ -1,0 +1,133 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }  
+ 
+ body{
+   background-image: url(images/ana-sayfa-deney-arka-plan.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+   background-size: cover;
+ 
+   
+   
+  
+  
+}
+ 
+ 
+ /*header bölümü*/
+
+ header > nav > a > img{
+   
+  max-width: 150px;
+  height: auto;
+ 
+ 
+ }
+ 
+ .up{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 0.5rem 1rem 0.5rem 0rem;
+ }
+ 
+ .up > ul > li > a,
+ .up > a{
+ 
+     color: rgb(255, 72, 0);
+     text-decoration: none;
+     text-transform: uppercase;    
+ }
+
+ 
+ .up > ul > li{
+      list-style: none;
+ }
+ .up > ul > li{float: left;}
+ .up > ul > li > a{
+  float: left;
+  margin-left: 4rem;
+  margin-right: 1rem;
+ }
+ a.button {
+  display:block;
+  float:left;
+  margin: 5px;
+  color:rgb(238, 17, 17);
+  text-align:center;
+  font-size:15px;
+  cursor: pointer;
+  text-decoration: none;
+  padding:10px;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-bottom: 3px solid rgba(0,0,0,0.5);
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  box-shadow: 0 2px 8px rgb(255, 166, 0), /* dış gölge */
+    inset 0 1px rgb(209, 161, 1), /* Top light Line */
+    inset 0 10px rgba(211, 167, 24, 0.733), /* Top Light Shadow */
+    inset 0 10px 20px rgb(252, 143, 0), /* Sides Light Shadow */
+    inset 0 -15px 30px rgb(196, 176, 2); /* Dark Background */
+  -webkit-box-shadow: 0 2px 8px rgba(255, 166, 0),
+    inset 0 1px rgba(209, 161, 1),
+    inset 0 10px rgba(211, 167, 24, 0.733),
+    inset 0 10px 20px rgba(252, 143, 0),
+    inset 0 -15px 30px rgba(226, 230, 1);
+  -moz-box-shadow: 0 2px 8px rgba(196, 176, 2),
+    inset 0 1px rgba(209, 161, 1),
+    inset 0 10px rgba(211, 167, 24, 0.733),
+    inset 0 10px 20px rgb(252, 143, 0),
+    inset 0 -15px 30px rgba(196, 176, 2);
+}
+  a.button:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+  }
+ /*main bölümü*/
+ section{
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem;
+  align-items: center;
+}
+section > article > h2 , h4{
+  font-size: 60px;
+  color:rgb(255, 166, 0);
+  text-align: center;
+}
+ /*footer bölümü*/
+ 
+ footer{
+     width: 100%;
+     flex-direction:column;
+ }
+ 
+ 
+ 
+ footer > article{
+  position:fixed;
+   display: flex;
+   justify-content: space-around;
+   bottom: 0;
+   width: 100%;
+ 
+}
+footer > article > p{
+   color: rgb(255, 72, 0);
+
+}
+
+footer > article > a > img{
+    width: 150px;
+    height: auto;
+    
+}
